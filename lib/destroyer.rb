@@ -6,8 +6,8 @@ require_relative 'manager.rb'
 class TweetsDestroyer < TweetsManager
   THREAD_SIZE = 16
 
-  def initialize(screen_name:)
-    super(screen_name: screen_name)
+  def initialize(screen_name)
+    super
   end
 
   def run(options = {})

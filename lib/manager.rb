@@ -11,7 +11,7 @@ class TweetsManager
   TIMESTAMP_FORMAT = '%Y-%m-%dT%H:%M:%S.%06N'
   SECRETS_FILE_NAME = 'secrets.yml'
 
-  def initialize(screen_name:)
+  def initialize(screen_name)
     token = load_token(screen_name)
     @client = Twitter::REST::Client.new(token)
     @screen_name = screen_name
@@ -20,8 +20,6 @@ class TweetsManager
 
   private
 
-  # Create a log file when using Logger.
-  # BUG: マルチスレッド時に複数ログファイルが生成される
   def logger
     @logger ||= Logger.new("log/#{self.class.name}_#{@screen_name}_#{timestamp}.log")
   end

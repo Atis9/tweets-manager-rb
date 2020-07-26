@@ -4,8 +4,8 @@ require_relative 'manager.rb'
 
 # Twitter::REST::Favorites#unfavorite
 class TweetsUnfavoriter < TweetsManager
-  def initialize(screen_name:)
-    super(screen_name: screen_name)
+  def initialize(screen_name)
+    super
   end
 
   def run(options = {})
