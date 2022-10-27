@@ -6,3 +6,5 @@ services:
       dockerfile: Dockerfile
     volumes:
       - ./log:/app/log
+      - ./config:/app/config
+      - ./main.rb:/app/main.rb
