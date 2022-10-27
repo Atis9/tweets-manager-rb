@@ -1,6 +1,5 @@
 .DS_Store
 
-Gemfile.lock
 secrets.yml
 log/*
 !log/.keep
