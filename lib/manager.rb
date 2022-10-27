@@ -9,7 +9,7 @@ class TweetsManager
   attr_reader :client
 
   TIMESTAMP_FORMAT = '%Y-%m-%dT%H:%M:%S.%06N'
-  SECRETS_FILE_NAME = 'secrets.yml'
+  SECRETS_FILE_PATH = 'config/secrets.yml'
 
   def initialize(screen_name)
     token = load_token(screen_name)
@@ -25,7 +25,7 @@ class TweetsManager
   end
 
   def load_token(screen_name)
-    secrets_file = File.open(SECRETS_FILE_NAME)
+    secrets_file = File.open(SECRETS_FILE_PATH)
     secrets = YAML.safe_load(secrets_file)
 
     secrets[screen_name]

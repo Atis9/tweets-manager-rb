@@ -4,7 +4,7 @@
 
 ```sh
 git clone https://github.com/Atis9/tweets-manager-rb.git
-cd tweets-manager-rb
+cd tweets-manager-rb/config
 cp secrets.yml.example secrets.yml
 
 # 1. Modify secrets.yml
@@ -14,6 +14,8 @@ cp secrets.yml.example secrets.yml
 #   consumer_secret:
 #   access_token:
 #   access_token_secret:
+
+cd ../
 
 # 2. Modify main.rb
 #

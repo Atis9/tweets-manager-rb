@@ -1,5 +1,5 @@
 .DS_Store
 
-secrets.yml
+config/secrets.yml
 log/*
 !log/.keep
