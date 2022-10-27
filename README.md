@@ -10,10 +10,10 @@ cp secrets.yml.example secrets.yml
 # 1. Modify secrets.yml
 #
 # your_screen_name:
-#     consumer_key:
-#     consumer_secret:
-#     access_token:
-#     access_token_secret:
+#   consumer_key:
+#   consumer_secret:
+#   access_token:
+#   access_token_secret:
 
 # 2. Modify main.rb
 #
