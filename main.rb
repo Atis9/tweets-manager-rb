@@ -3,10 +3,6 @@
 require_relative 'lib/destroyer.rb'
 require_relative 'lib/unfavoriter.rb'
 
-two_days_ago = Time.now - (60 * 60 * 24 * 2)
-
-# destroyer_atis = TweetsDestroyer.new('AtiS')
-# destroyer_atis.run(until_time: two_days_ago)
-
-# unfavoriter_atis = TweetsUnfavoriter.new('AtiS')
-# unfavoriter_atis.run(until_time: two_days_ago)
+# two_days_ago = Time.now - (60 * 60 * 24 * 2)
+# destroyer = TweetsDestroyer.new('your_screen_name').run(until_time: two_days_ago)
+# unfavoriter = TweetsUnfavoriter.new('your_screen_name').run(until_time: two_days_ago)
